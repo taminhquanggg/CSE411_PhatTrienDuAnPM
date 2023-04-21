@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\CSE_WebEducation_Guest.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CSE_WebEducation_Guest.bundle.scp.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\BT4-Nhom2.docx",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\BT4-Nhom2.docx"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\CSE_fanpage.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\CSE_fanpage.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\VNPT_Logo.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\VNPT_Logo.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\backgroud_login.jpg",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\backgroud_login.jpg"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\ces_icon.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\ces_icon.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\csewhite.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\csewhite.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\daotao.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\daotao.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\finding.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\finding.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\free-news-icon-4301-thumb 2.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\free-news-icon-4301-thumb 2.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\icon-sukien.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\icon-sukien.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\iconLocation.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\iconLocation.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\iconPhone.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\iconPhone.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\log_fpt.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\log_fpt.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\logo.ico",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\logo.ico"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\logo_samsung.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\logo_samsung.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\logo_viettel.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\logo_viettel.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\logo_vnpt.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\logo_vnpt.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\message (1).txt",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\message (1).txt"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\message.txt",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\message.txt"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Img\\png-transparent-computer-icons-book-reading-book-angle-logo-author 1.png",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Img\\png-transparent-computer-icons-book-reading-book-angle-logo-author 1.png"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\LICENSE.txt"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\css\\all.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\Guest_Assets\\Lib\\icons\\fontawesome-free-6.3.0-web\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\css\\home.css",
+      "PackagePath": "staticwebassets\\Guest_Assets\\css\\home.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\Guest_Assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\Guest_Assets\\css\\main.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\font-awsome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\font-awsome\\css\\all.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\font-awsome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awsome\\css\\all.min.css"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "L:\\study\\Phat trien du an PM\\CSE_WebEducation\\CSE_WebEducation_Guest\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.CSE_WebEducation_Guest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.CSE_WebEducation_Guest.props",
+      "PackagePath": "build\\CSE_WebEducation_Guest.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CSE_WebEducation_Guest.props",
+      "PackagePath": "buildMultiTargeting\\CSE_WebEducation_Guest.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.CSE_WebEducation_Guest.props",
+      "PackagePath": "buildTransitive\\CSE_WebEducation_Guest.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

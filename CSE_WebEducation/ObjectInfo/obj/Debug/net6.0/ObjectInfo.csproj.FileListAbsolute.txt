@@ -1,0 +1,15 @@
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\bin\Debug\net6.0\ObjectInfo.exe
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\bin\Debug\net6.0\ObjectInfo.deps.json
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\bin\Debug\net6.0\ObjectInfo.runtimeconfig.json
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\bin\Debug\net6.0\ObjectInfo.dll
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\bin\Debug\net6.0\ObjectInfo.pdb
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.csproj.AssemblyReference.cache
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.GeneratedMSBuildEditorConfig.editorconfig
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.AssemblyInfoInputs.cache
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.AssemblyInfo.cs
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.csproj.CoreCompileInputs.cache
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.dll
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\refint\ObjectInfo.dll
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.pdb
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ObjectInfo.genruntimeconfig.cache
+L:\study\Phat trien du an PM\CSE_WebEducation\ObjectInfo\obj\Debug\net6.0\ref\ObjectInfo.dll

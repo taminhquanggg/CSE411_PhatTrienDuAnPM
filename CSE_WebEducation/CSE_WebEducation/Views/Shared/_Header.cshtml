@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Http
+@using CommonLib
+@using ObjectInfo
+
+@{
+    decimal topMenuActive = ViewBag.RootFunctionId == null ? 1 : ViewBag.RootFunctionId;
+    CSE_UsersInfo user_Info = Context.GetCurrentUser();
+    string _version = GetType().Assembly.GetName().Version.ToString();
+}
+
+@Html.Partial("~/Views/Shared/_Menu.cshtml")
+
+<script>
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+
+    $(document).ready(function () {
+
+    });
+</script>

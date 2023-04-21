@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CSE_WebEducation_Guest.props" />
+</Project>

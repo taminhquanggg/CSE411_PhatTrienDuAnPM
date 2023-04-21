@@ -1,0 +1,358 @@
+﻿@using CSE_WebEducation
+@using ObjectInfo;
+@using CommonLib;
+
+@{
+    ViewData["Title"] = "Thêm mới bài viết";
+    Layout = "~/Views/Shared/_ManaLayout.cshtml";
+}
+<style>
+    .holder {
+        height: 300px;
+        width: 300px;
+        border: 1px solid gray;
+    }
+
+    .img-preview {
+        max-width: 300px;
+        max-height: 300px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .heading {
+        font-family: Montserrat;
+        font-size: 45px;
+        color: green;
+    }
+</style>
+
+<form id="formAddPosts" enctype="multipart/form-data">
+    <div class="block-add">
+        <div class="box-top">
+            <h3 class="title-add">Thêm mới bài viết</h3>
+        </div>
+        <div class="body-report no-scroll pt-0">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Danh mục <span class="clr-red">(*)</span></div>
+                        <div class="field-report" id="div_function">
+                            @Html.Partial("~/Areas/Management/Posts/Views/_Partial_Category_Tree.cshtml")
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Tiêu đề <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <input type="text" id="txtTitle" name="" autocomplete="off" autofocus maxlength="1000"
+                                tabindex="2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Ảnh bìa <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <div class="holder">
+                                <img class="img-preview" id="imgPreview" src="~/img/upload.jpg" alt="pic" />
+                            </div>
+                            <input type="file" name="photograph" id="thumbnail" class="cs-input-file"
+                                accept=".png, .jpg, .jpeg" tabindex="3" style=" width: unset; padding: 0; border: 0;" />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Mô tả <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <input type="text" id="txtDescription" name="" autocomplete="off" autofocus maxlength="1000"
+                                tabindex="4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Ngày bắt đầu <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <input type="text" id="dtStartDate" placeholder="__/__/____" disabled tabindex="6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Ngày kết thúc <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <input type="text" id="dtEndDate" placeholder="__/__/____" disabled tabindex="7">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Địa điểm <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <input type="text" id="txtLocation" name="" autocomplete="off" autofocus maxlength="1000" disabled tabindex="8">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="flex-report">
+                        <div class="title-report">Nội dung <span class="clr-red">(*)</span></div>
+                        <div class="field-report">
+                            <textarea type="file" id="Content" name="Content" maxlength="4000" tabindex="9"></textarea >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-form">
+        <div class="container-footer">
+            <button class="btn-save" type="button" id="btnSend" onclick="confirmSubmit();"><img src="~/bidding_lib/img/icon-save.svg" alt="img"  tabindex="9">Lưu</button>
+            <button class="btn-cancel" type="button" id="btnExit" onclick="closeFormAdd();"><img src="~/bidding_lib/img/icon-cancel.svg" alt="img"  tabindex="10">Hủy</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    $(document).ready(function () {
+        //$("#slPost_Type").val(1);
+    });
+
+    var file;
+
+    CKEDITOR.replace('Content', {
+        extraPlugins: 'timestamp',
+        removeButtons: 'Underline',
+        removePlugins: 'image'
+    });
+
+    $('#dtStartDate,#dtEndDate').datetimepicker({
+        format: 'd/m/Y H:i',
+        formatTime: 'H:i',
+        formatDate: 'd/m/Y',
+        timepicker: true,
+        mask: '39/19/9999',
+        validateOnBlur: false,
+        scrollInput: false
+    });
+
+    $('#thumbnail').change(function () {
+        file = this.files[0];
+        console.log(file);
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+                $('#imgPreview').attr('src', event.target.result);
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+
+    $('#slCategory').change(function () {
+        if ($("#slCategory").val() == "SUKIEN") {
+            $("#dtStartDate").prop('disabled', false);
+            $("#dtEndDate").prop('disabled', false);
+            $("#txtLocation").prop('disabled', false);
+        } else {
+            $("#dtStartDate").prop('disabled', true);
+            $("#dtEndDate").prop('disabled', true);
+            $("#txtLocation").prop('disabled', true);
+        }
+    });
+
+    $('#formAddPosts').on('submit', function (e) {
+        try {
+            var that = this;
+            /* e = window.event || e;*/
+            e.preventDefault();
+
+            //trimInputValue(this);
+            if (!validateAdd()) return false;
+
+            var formData = new FormData();
+            collectDataToAdd(formData);
+
+            $.ajax({
+                type: "POST",
+                enctype: "multipart/form-data",
+                url: '/trang-khoa/bai-viet/them-moi',
+                data: formData,
+                beforeSend: function () {
+                    SpinLoading(true);
+                },
+                contentType: false, processData: false, async: false,
+                success: function (data) {
+                    if (data && preHandleDataResult(data)) {
+                        if (data.success > 0) {
+                            showSuccess(data.responseMessage);
+                            setTimeout(function () {
+                                window.location.href = '/trang-khoa/bai-viet/danh-sach';
+                            }, 1000);
+                        } else if (data.success == -600011) {
+                            $("#txtTitle").focus();
+                            showError(data.responseMessage);
+                        }
+                        else {
+                            showError(data.responseMessage);
+                        }
+                    }
+                },
+                error: function (data) {
+                    console.log(data.error);
+                },
+                complete: function () {
+                    SpinLoading(false);
+                }
+            });
+
+        } catch (e) {
+            console.log(e);
+        }
+    });
+
+    function collectDataToAdd(formData) {
+        //formData.append('info.Post_Type', $("#slPost_Type").val());
+        formData.append('info.Category_Id', $("#slCategory").val());
+        formData.append('info.Title', $("#txtTitle").val().trim());
+        formData.append('info.Description', $("#txtDescription").val().trim());
+        formData.append('info.Start_Date', $('#dtStartDate').val().replace("__/__/____", ""));
+        formData.append('info.Content', CKEDITOR.instances["Content"].getData());
+        formData.append('func.Prid', $("#slCategory").val());
+
+        if (file) {
+            formData.append('file_Content', file);
+        }
+
+        formData.append('Start_Date', $('#dtStartDate').val().replace("__/__/____", ""));
+        formData.append('End_Date', $('#dtEndDate').val().replace("__/__/____", ""));
+    }
+
+    function validateAdd() {
+        try {
+            //var _postsType = $("#slPost_Type").val();
+            var _category = $("#slCategory").val();
+            var _title = $("#txtTitle").val().trim();
+            var _descripttion = $("#txtDescription").val().trim();
+            var _start_date = $('#dtStartDate').val().replace("__/__/____", "");
+            var _end_date = $('#dtEndDate').val().replace("__/__/____", "");
+            var _location = $("#txtLocation").val().trim();
+            var _content = CKEDITOR.instances["Content"].getData();
+            console.log($('#dtStartDate').val())
+            if (_category == null || _category == "") {
+                showError('Danh mục không được để trống.')
+                $("#slCategory").focus();
+                return false;
+            }
+
+            if (!_title) {
+                showError('Tiêu đề không được để trống.')
+                $("#txtTitle").focus();
+                return false;
+            }
+
+            if (!file) {
+                showError('Phải chọn ảnh bìa cho bài viết.')
+                return false;
+            }
+
+            if (!_descripttion) {
+                showError('Mô tả không được để trống.')
+                $("#txtDescription").focus();
+                return false;
+            }
+
+            if (_category == "SUKIEN") {
+                if (_start_date == null || _start_date == "") {
+                    showError('Ngày, giờ bắt đầu không được để trống.')
+                    $("#dtStartDate").focus();
+                    return false;
+                }
+                // check đúng định dạng format
+                var _Time_start_date = _start_date.substring(11, 18).trim();
+                if (Check_fomat_Hours("Ngày, giờ bắt đầu", _Time_start_date) == false) {
+                    $('#dtStartDate').focus();
+                    return false;
+                }
+
+                var _Date_start_date = _start_date.substring(0, 11).trim();
+                if (_Date_start_date && !isDate_ddMMyyyy(_Date_start_date)) {
+                    showError('Ngày, giờ bắt đầu không hợp lệ');
+                    $('#dtStartDate').focus();
+                    return false;
+                }
+
+                if (_end_date == null || _end_date == "") {
+                    showError('Ngày, giờ kết thúc không được để trống.')
+                    $("#dtEndDate").focus();
+                    return false;
+                }
+                // check đúng định dạng format
+                var _Time_end_date = _end_date.substring(11, 18).trim();
+                if (Check_fomat_Hours("Ngày, giờ kết thúc", _Time_end_date) == false) {
+                    $('#dtEndDate').focus();
+                    return false;
+                }
+
+                var _Date_end_date = _end_date.substring(0, 11).trim();
+                if (_Date_end_date && !isDate_ddMMyyyy(_Date_end_date)) {
+                    showError('Ngày, giờ kết thúc không hợp lệ');
+                    $('#dtEndDate').focus();
+                    return false;
+                }
+
+                if (!_location) {
+                    showError('Địa điểm không được để trống.')
+                    $("#txtLocation").focus();
+                    return false;
+                }
+            }
+
+            if (!_content) {
+                showError("Nội dung không được để trống.");
+                $('#content').focus();
+                return false;
+            }
+
+            return true;
+        } catch (ex) {
+            console.log(ex);
+        }
+    }
+    function BackList() {
+        history.back();
+    }
+
+    function confirmSubmit() {
+        try {
+            //nvsConfirmInfo("Bạn có chắc chắn muốn lưu thông tin không?", function () {
+                $('#formAddPosts').submit();
+            //})
+        } catch (ex) {
+            console.log(ex);
+        }
+    }
+
+
+    function closeFormAdd() {
+        try {
+            nvsConfirm("Bạn có chắc chắn muốn thoát không?", function () {
+                BackList();
+            })
+        } catch (ex) {
+            console.log(ex);
+        }
+    }
+
+
+
+</script>
+

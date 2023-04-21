@@ -1,0 +1,170 @@
+﻿@using CSE_WebEducation_Guest;
+@using ObjectInfo;
+@using CommonLib;
+@using System.Text
+
+@{
+
+    List<CSE_Posts_CategoriesInfo> _LstCategory = new List<CSE_Posts_CategoriesInfo>();
+    _LstCategory = ApiClient_Posts_Category.GetAll();
+
+    string active_id = "";
+    if (ViewBag.curTab != null)
+    {
+        active_id = ViewBag.curTab;
+    }
+
+}
+@functions {
+    void RenderCategoryAsTree(List<CSE_Posts_CategoriesInfo> lstMenu, string prid, decimal lev, string active_id)
+    {
+        List<CSE_Posts_CategoriesInfo> lstSubMenu = new List<CSE_Posts_CategoriesInfo>();
+        if (lstMenu?.Count > 0)
+        {
+            lstSubMenu = lstMenu.Where(t => t.PrId.Equals(prid)).OrderBy(t => t.LstOdr).ToList();
+            string ul_classname = lev == 0 ? "header-main-menu" : "sub-menu";
+            string li_classname = lev == 0 ? "header-menu-item" : "sub-menu-item";
+            string class_active = "";
+            @if (lstSubMenu?.Count > 0)
+            {
+                <ul class="@ul_classname">
+                    @foreach (CSE_Posts_CategoriesInfo _category in lstSubMenu)
+                    {
+                        @if (_category.Id == active_id)
+                        {
+                            class_active = " active";
+                        }
+                        else
+                        {
+                            class_active = "";
+                        }
+                        <li class="@li_classname @class_active">
+                            <div>
+                                <a href="@_category.Get_Url">@_category.Name</a>
+                                @if (_category.IsLast == 0)
+                                {
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                }
+                            </div>
+                            @{
+                                RenderCategoryAsTree(lstMenu, _category.Id, lev + 1, active_id);
+                            }
+                        </li>
+                    }
+                    @if (lev == 0)
+                    {
+                        <div class="header-navigation-bar"></div>
+                    }
+                </ul>
+            }
+        }
+    }
+}
+
+<header id="navbar-header" class="header-container">
+    <div class="close-mobile-button">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="header-container-inner container-xxl">
+        <a href="/" class="header-logo">
+            <img width="40%" src="~/Guest_Assets/Img/ces_icon.png" alt="">
+        </a>
+        <div class="header-navigation-wrapper">
+            <div class="header-navigation-menu">
+                @{
+                    RenderCategoryAsTree(_LstCategory, "0", 0, active_id);
+                }
+            </div>
+            <div class="header-find-icon">
+            </div>
+        </div>
+    </div>
+</header>
+ <script type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    // slider events
+    $(document).ready(function () {
+
+        var lastScollTop = 0
+        var navbar = document.getElementById("navbar-header")
+        window.addEventListener("scroll", () => {
+            var scrollTop = window.pageYOffset
+            if (window.innerWidth > 1200 && scrollTop > 400) {
+                navbar.classList.add("sticky-header")
+            }
+            else {
+                navbar.classList.remove("sticky-header")
+            }
+            lastScollTop = scrollTop
+        })
+
+        //active thằng cha có con active
+        const submenuActive = document.querySelector(".sub-menu-item.active");
+        if (submenuActive != null) {
+            const parentWithClass = submenuActive.closest(".header-menu-item");
+            parentWithClass.classList.add("active");
+        }
+
+
+        //đặt tọa độ thanh hover bằng thằng đang active
+        var navbarItemActive = document.querySelector(".header-menu-item.active");
+        $(".header-navigation-bar").css("left", navbarItemActive.offsetLeft + 'px');
+        $(".header-navigation-bar").css("width", navbarItemActive.offsetWidth + 'px');
+
+        //hover chuột thì thanh hover chạy theo
+        var navbarItem = document.querySelectorAll(".header-menu-item")
+        for (let i = 0; i < navbarItem.length; i++) {
+            navbarItem[i].addEventListener("mouseover", () => {
+                $(".header-navigation-bar").css("left", navbarItem[i].offsetLeft + 'px');
+                $(".header-navigation-bar").css("width", navbarItem[i].offsetWidth + 'px');
+            })
+        }
+
+        //bỏ hover thì về thằng đang active
+        var navbarList = document.querySelector(".header-main-menu")
+        navbarList.addEventListener("mouseout", () => {
+            $(".header-navigation-bar").css("left", navbarItemActive.offsetLeft + 'px');
+            $(".header-navigation-bar").css("width", navbarItemActive.offsetWidth + 'px');
+        })
+
+
+        // open header response sive
+        const menuBtn = document.querySelector("#menu-btn")
+        const mobileOverlay = document.querySelector(".overlay-mobile")
+        const menuMobile =
+            document.querySelector(".header-container")
+        const closeBtn = document.querySelector(".close-mobile-button")
+
+        menuBtn.addEventListener("click", () => {
+            menuMobile.classList.add("active")
+            mobileOverlay.classList.add("active")
+        })
+        closeBtn.addEventListener("click", () => {
+            menuMobile.classList.remove("active")
+            mobileOverlay.classList.remove("active")
+        })
+
+
+        // open sub menu
+        const item_menu = document.querySelectorAll(".header-menu-item div i")
+        const sub_menu_header = document.querySelectorAll(".sub-menu")
+        item_menu.forEach((item, index) => {
+            item.addEventListener("click", () => {
+                if (sub_menu_header[index].classList.contains("active")) {
+                    sub_menu_header[index].classList.remove("active")
+                }
+                else {
+                    sub_menu_header[index].classList.add("active")
+                }
+            })
+        })
+    });
+
+
+
+</script>

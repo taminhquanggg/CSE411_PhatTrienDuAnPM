@@ -1,0 +1,63 @@
+﻿@using CommonLib
+@{
+    var user = this.Context.GetCurrentUser();
+
+    int timeoutStatus = 0;
+    if (ViewBag.TimeOutStatus != null)
+    {
+        timeoutStatus = ViewBag.TimeOutStatus;
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Guest_Assets/Img/logo.ico">
+    <title>@ViewData["Title"] - Website khoa CNTT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&family=Poppins:ital,wght@0,400;0,500;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Guest_Assets/Lib/icons/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/Guest_Assets/Lib/icons/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <!-- slick slider css -->
+
+    <link rel="stylesheet" href="/Guest_Assets/css/main.css">
+    <link rel="stylesheet" href="/Guest_Assets/css/home.css">
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @*<script type="text/javascript" src="~/bidding_lib/libs/js/umd/popper.min.js"></script>*@
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main-wrapper">
+            @*header*@
+            <partial name="~/Views/Shared/_Header.cshtml" />
+
+            @RenderBody()
+
+            @*footer*@
+            <partial name="~/Views/Shared/_Footer.cshtml" />
+
+            <div class="overlay-mobile"></div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CSE_WebEducation_Service.props" />
+</Project>

@@ -1,0 +1,233 @@
+﻿@using CSE_WebEducation.Helper
+@using CommonLib
+@{
+    var user = this.Context.GetCurrentUser();
+
+    int timeoutStatus = 0;
+    if (ViewBag.TimeOutStatus != null)
+    {
+        timeoutStatus = ViewBag.TimeOutStatus;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@if (user == null)
+{
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="~/img/logo.ico">
+        <title>@ViewData["Title"] - CSE</title>
+
+        <link rel="stylesheet" href="~/css/StyleLogin.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/font-awsome/css/all.css" asp-append-version="true" />
+
+        <script type="text/javascript" src="~/bidding_lib/libs/js/jquery.min.js"></script>
+
+        <script src="~/lib/sweetalert/sweetalert2-init.js"></script>
+        <script src="~/lib/sweetalert/sweetalert2.js"></script>
+        <script src="~/lib/sweetalert/es6-promise.auto.min.js"></script>
+        <link href="~/lib/sweetalert/sweetalert2.css" rel="stylesheet" />
+        <link href="~/lib/notify/animate.min.css" rel="stylesheet" />
+        <link href="~/lib/notify/notify.css" rel="stylesheet" />
+        <script src="~/lib/notify/bootstrap-notify.min.js"></script>
+        <script src="~/lib/notify/bootstrap-notify-init.js"></script>
+    </head>
+    <body>
+        @RenderBody()
+    </body>
+}
+else
+{
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - CSE</title>
+        @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/LeftMenu.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/CSE_WebEducation.styles.css" asp-append-version="true" />
+
+        @*<link rel="icon" href="~/bidding_lib/img/logo.svg" sizes="any" type="image/svg+xml">*@
+        <link rel="icon" type="image/x-icon" href="~/img/logo.ico">
+        <link rel="stylesheet" href="~/bidding_lib/libs/css/bootstrap.min.css">
+        <link rel="stylesheet" href="~/bidding_lib/libs/css/all.css">
+        <link rel="stylesheet" href="~/bidding_lib/libs/css/swiper.css">
+        <link rel="stylesheet" href="~/bidding_lib/libs/css/animate.css">
+        <link rel="stylesheet" href="~/bidding_lib/libs/css/multiple-select.css">
+        <link rel="stylesheet" href="~/bidding_lib/libs/css/jquery.datetimepicker.min.css">
+        <link rel="stylesheet" href="~/bidding_lib/scss/main.min.css" asp-append-version="true">
+
+        <link href="~/fonts/stylesheet.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/popup.css" rel="stylesheet" />
+        <link href="~/css/font-awesome.css" rel="stylesheet" />
+        <link href="~/bidding_lib/libs/css/datepicker.min.css" rel="stylesheet" />
+
+        
+        @*datatables*@
+        <script type="text/javascript" src="~/bidding_lib/libs/js/jquery.min.js"></script>
+        <script type="text/javascript" src="~/bidding_lib/libs/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="~/bidding_lib/libs/js/swiper.js"></script>
+        <script type="text/javascript" src="~/bidding_lib/libs/js/jquery.multiple.select.js"></script>
+        <script type="text/javascript" src="~/bidding_lib/libs/js/jquery.datetimepicker.full.min.js"></script>
+
+        <link href="~/lib/datatable_new/jquery.dataTables.min.css" rel="stylesheet" />
+        <link href="~/lib/datatable_new/fixedHeader.dataTables.min.css" rel="stylesheet" />
+        <link href="~/lib/datatable_new/fixedColumns.dataTables1.min.css" rel="stylesheet" />
+        <script src="~/lib/datatable_new/jquery.dataTables.min.js"></script>
+        <script src="~/lib/datatable_new/dataTables.fixedHeader.min.js"></script>
+        <script src="~/lib/datatable_new/dataTables.fixedColumns1.min.js"></script>
+        <script src="~/lib/datatable_new/dataTables.colReorder.min.js"></script>
+
+        @* datetimepicker month year *@
+        <script type="text/javascript" src="~/bidding_lib/libs/js/bootstrap-datepicker-my.min.js"></script>
+        <script src="~/lib/datetimepicker/jquery.datetimepicker.full.min.js" asp-append-version="true"></script>
+
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script type="text/javascript" src="~/bidding_lib/libs/js/script.js"></script>
+
+        <script src="~/lib/ckeditor/ckeditor.js"></script>
+
+        <script src="~/lib/sweetalert/sweetalert2-init.js"></script>
+        <script src="~/lib/sweetalert/sweetalert2.js"></script>
+        <script src="~/lib/sweetalert/es6-promise.auto.min.js"></script>
+        <link href="~/lib/sweetalert/sweetalert2.css" rel="stylesheet" />
+        <link href="~/lib/notify/animate.min.css" rel="stylesheet" />
+        <link href="~/lib/notify/notify.css" rel="stylesheet" />
+        <script src="~/lib/notify/bootstrap-notify.min.js"></script>
+        <script src="~/lib/notify/bootstrap-notify-init.js"></script>
+         <link href="~/css/_cusStyle.css" rel="stylesheet" asp-append-version="true" />
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <style>
+            .display-none {
+                display: none;
+            }
+        </style>
+
+
+        <div id="wrapper">
+            <partial name="~/Views/Shared/_Header.cshtml" />
+
+
+            <section class="home-section">
+                <nav>
+                    <div class="sidebar-button">
+                        <i class='bx bx-menu sidebarBtn' id="sidebarbtn">
+
+                        </i>
+                        <span class="dashboard">@ViewData["Title"]</span>
+
+                    </div>
+
+                    <div class="head-right ml-auto">
+                        <div class="user">
+                            <div class="name-user">
+                                <div>@user.Full_Name</div>
+                            </div>
+                            <div class="avt"><img src="~/bidding_lib/img/avtadmin.png" alt="img"></div>
+                            <div class="block-utility">
+                                <div class="box-utility">
+                                    <a href="javascript:0;" data-toggle="modal" onclick="showFormChangePassword();">
+                                        <span><img src="~/bidding_lib/img/icon-mk.svg" alt="img"></span>
+                                        <span>Đổi mật khẩu</span>
+                                    </a>
+                                    <a href="javascript:0;" onclick="Logout()">
+                                        <span><img src="~/bidding_lib/img/icon-dx.svg" alt="img"></span>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+
+                    </script>
+                </nav>
+
+                <div class="home-content">
+                    <main class="main">
+                        <div class="container">
+                            @*<partial name="~/Views/Shared/_BreadcrumbAndSearch.cshtml" />*@
+                            @RenderBody()
+                        </div>
+                    </main>
+                </div>
+            </section>
+
+
+        </div>
+
+        <div id="divLoader" class="loader-wrap" style="display:none">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+
+        <div class="modal modal-report" id="dPopupChangePass"></div>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+
+    <script>
+            function Logout() {
+            try {
+                nvsConfirm("Bạn có chắc chắn muốn đăng xuất khỏi hệ thống không?", function () {
+                    showSuccess("Đăng xuất thành công");
+                    location.href = '/logout';
+                })
+            } catch (ex) {
+                console.log(ex);
+            }
+        }
+                $( "#sidebarbtn" ).click(function() {
+                    if($(".sidebar").hasClass("hide")){
+                        $(".sidebar").removeClass("hide");
+                        $(".links-name").removeClass("hide")
+                        $(".icon-agldown").removeClass("hide")
+                    }else{
+                        $(".sidebar").addClass("hide");
+                        $(".links-name").addClass("hide")
+                        $(".icon-agldown").addClass("hide")
+                    }
+                });
+
+                function preHandleDataResult(data) {
+                    if (data.success == '@ActionResultConfig.TIME_OUT') {
+                        window.location.href = '@RouteConfig.TIME_OUT';
+                    } else if (data.success == '@ActionResultConfig.UNAUTHORIZED_AJAX') {
+                        nvsAlert("Thông báo", "Không có quyền thực hiện chức năng này");
+                    } else {
+                        return true;
+                    }
+                    return false;
+                }
+
+                function showFormChangePassword() {
+                    try {
+                        $.ajax({
+                            type: "GET",
+                            url: "/quan-tri/nguoi-dung/doi-mat-khau",
+                            success: function (data) {
+                                if (data != null && preHandleDataResult(data)) {
+                                    $("#dPopupChangePass").html(data);
+                                    ShowPopupDialog("dPopupChangePass", "Đổi mật khẩu");
+                                }
+                            },
+                            error: function (data) {
+                                console.log(data.error);
+                            }
+                        });
+                    } catch (e) {
+                        console.log(e);
+                    }
+            }
+
+    </script>
+}
+
+</html>
